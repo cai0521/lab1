@@ -1,28 +1,25 @@
 package bsu.rfe.java.group7.lab1.CAI.A7;
 
 public class Icecream extends Food {
-
-    private String syrup;
-
-    public String getSyrup() {
-        return syrup;
-    }
-
-    public void setSyrup() {
-        this. syrup = syrup;
-    }
-
-    public Icecream(String syrup) {
+    private String sirup;
+    public Icecream(String sirup) {
         super("Icecream");
-        this.syrup = syrup;
+        this.sirup = sirup;
     }
 
     public void consume() {
         System.out.println(this + "съеден");
     }
+    
+    public String getSirup() {
+        return sirup;
+    }
 
+    public void setSirup(String sirup) {
+        this.sirup = sirup;
+    }
     public String toString() {
-        return super.toString() + " with '" + syrup.toUpperCase() + "'";
+        return super.toString() + "сироп '" + sirup.toUpperCase() + "'";
 
     }
 }
